@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --font-inter: "Inter", sans-serif;
+}
+.App {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.header_logo {
+  max-width: 150px;
+}
+.navbar-nav > .nav-link {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #757575;
+  padding-left: 25px !important;
+}
+.navbar {
+  background: #f1f3f5;
+  border-color: #0000000d;
+  border-bottom: solid 2px #d6d9db;
+  padding: 18px 0px !important;
+}
+footer {
+  padding: 30px 0px;
+  background: #f1f3f5;
+}
+footer .gt_touch h5 {
+  color: #003964;
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+footer .gt_touch .country_name {
+  color: #696969;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8em;
+}
+footer .gt_touch .address {
+  color: #696969;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.product-section {
+  padding: 80px 0px;
+}
+.faqSection {
+  padding: 50px 0px;
+  background: #fafafa;
+}
+.faqItems {
+  border: solid 1px #fafafa;
+  margin-bottom: 20px;
+}
+.faqHeading {
+  background: #f0eeee;
+  cursor: pointer;
+}
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.faqHeading h2 {
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 0px;
+  display: flex;
+  gap: 10px;
+}
+.faqDiscription {
+  background: #fafafa;
+  height: 0px;
+  transform: scaleY(0);
+  padding: 0;
+  transition: all 0.3s;
+}
+.faqDiscription.faqShow {
+  height: auto;
+  transform: scaleY(1);
+  padding: 10px;
+  transition: all 0.3s;
+}
+.faqDiscription p {
+  transition: all 0.3s;
+}
+.modalOverlay {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9;
+  overflow: hidden;
+}
+.modalshow {
+  display: block;
+}
+.modalDiv {
+  width: 500px;
+  position: fixed;
+  height: auto;
+  left: 50%;
+  transition: all 0.3s;
+  top: -500px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 24px;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.formGroup .btn {
+  width: 100%;
+  font-size: 14px;
+  background: #003964;
+  border: solid 1px #003964;
+}
+.showModalDiv {
+  top: 50%;
+  transition: all 0.3s;
+}
+.en {
+  position: fixed;
+  top: 100px;
+  writing-mode: vertical-lr;
+  right: 0;
+}
+.closeBtn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: none;
+  background: #f0f0f0;
+  width: 35px;
+  height: 35px;
+  border: solid 1px #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.outerDiv ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.outerDiv ul li {
+  background: #dfdfdf;
+  color: #000;
+  padding: 10px;
+  position: relative;
+  font-size: 14px;
+  border-bottom: solid 1px #cccbcb;
+}
+.outerDiv ul li:last-child {
+  border-bottom: 0px;
+}
+.outerDiv ul li span {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  font-size: 18px;
+  top: -1px;
+  width: 41px;
+  height: 41px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.todoAdd {
+  display: flex;
+}
+.todoAdd input {
+  flex-basis: 90%;
+
+  padding: 15px 30px;
+}
+.todoAdd button {
+  flex-basis: 10%;
+}
+.todoList {
+  padding: 50px 0px;
+}
+.completetodo {
+  text-decoration: line-through;
+  background-color: #61dafb !important;
+}
+.tabsList {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.tabsList li button {
+  width: 120px;
+  height: 44px;
+  border: solid 2px #6b6b6b;
+  background: #6b6b6b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.tabsList li button.activeBtn {
+  border: solid 2px #1564e3;
+  background: #1564e3;
+}
+.contentData {
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 22px;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.contentData p {
+  transition: all 0.3s;
+}
+.tabsOuter {
+  padding: 50px 0px;
+  background: #fafafa;
+}
+.boxClose,
+.boxOpen {
+  position: relative;
+}
+.boxClose:before {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: #222222;
+  content: "";
+  top: calc(50% - 2px);
+  right: 15px;
+  opacity: 0.5;
+}
+.boxClose:after {
+  position: absolute;
+  width: 2px;
+  height: 18px;
+  background: #222222;
+  content: "";
+  top: calc(50% - 9px);
+  right: 23px;
+  opacity: 0.5;
+}
+.boxOpen:before {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: #222222;
+  content: "";
+  top: calc(50% - 2px);
+  right: 15px;
+  opacity: 0.5;
+}
+.homepage {
+  padding: 50px 0px;
+  background: #fafafa;
+}
+.servicesSection {
+  padding: 50px 0px;
+}
