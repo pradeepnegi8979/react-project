@@ -3,10 +3,18 @@
   "name": "iffort tech  PWA",
   "icons": [
     {
-      "src": "images/logo.png",
+      "src": "/images/logo.png",
       "type": "image/png",
       "sizes": "512*512",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "368x662",
+      "form_factor": "narrow"
     }
   ],
   "start_url": ".",
