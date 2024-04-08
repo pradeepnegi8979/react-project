@@ -1,11 +1,12 @@
 import React from "react";
 import { Header } from "../common/Header";
 import { Footer } from "../common/Footer";
+import { Faqs } from "../Faqs";
 function Casestudy() {
   return (
     <>
       <Header />
-      <section>case study page.</section>
+      <Faqs />
       <Footer />
     </>
   );
