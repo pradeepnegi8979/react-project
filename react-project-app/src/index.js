@@ -13,6 +13,7 @@ import { Contact } from "./pages/Contact";
 import { Services } from "./pages/Services";
 import { Error404 } from "./pages/404";
 import { Blog } from "./pages/Blog";
+import { Clothing } from "./pages/Clothing";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let allRoutes = createBrowserRouter([
@@ -39,6 +40,10 @@ let allRoutes = createBrowserRouter([
   {
     path: "blogs",
     element: <Blog />,
+  },
+  {
+    path: "shops",
+    element: <Clothing />,
   },
   {
     path: "*",

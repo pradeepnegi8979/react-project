@@ -4,7 +4,6 @@ import { faqans } from "./data/faqdata.js";
 import { Container, Row } from "react-bootstrap";
 function Faqs() {
   let [showAns, setShowAns] = useState(faqans[0].id);
-
   return (
     <section className="faqSection">
       <Container>

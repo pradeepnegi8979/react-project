@@ -331,3 +331,73 @@ footer .gt_touch .address {
 .servicesSection {
   padding: 50px 0px;
 }
+.weatherSection {
+  padding: 50px 0px;
+}
+.weatherOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weatherBox {
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  background: #fafafa;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.searchWeather,
+.searchBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.searchBox .form-control {
+  border-radius: 5px 0px 0px 5px;
+}
+.searchBox .btn {
+  border-radius: 0px 5px 5px 0px;
+}
+.categorySection ul {
+  list-style: none;
+  padding: 30px 0px 0px;
+  margin: 0;
+}
+.cloathingSec {
+  padding-top: 70px;
+}
+.categorySection ul li {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 5px;
+  background: #fafafa;
+  margin-bottom: 5px;
+}
+.itemGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.itemGrid .item {
+  padding: 15px;
+  border-radius: 5px;
+  background: #fafafa;
+  text-align: center;
+}
+.itemGrid .item > img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+}
+.itemGrid .item h4 {
+  margin-top: 25px;
+}
+.itemGrid .item h5 {
+  margin-bottom: 0;
+}

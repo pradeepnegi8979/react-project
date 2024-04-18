@@ -7,7 +7,6 @@ function Todo() {
   const saveTodoList = (event) => {
     event.preventDefault();
     const toname = event.target.elements.toname.value.trim().toLowerCase();
-
     if (
       toname !== "" &&
       !todolist.some((item) => item.toLowerCase() === toname)
