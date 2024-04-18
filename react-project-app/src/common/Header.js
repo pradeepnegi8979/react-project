@@ -32,6 +32,9 @@ function Header() {
             <LinkContainer to="/blogs">
               <Nav.Link>Blog </Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/shops">
+              <Nav.Link>Shop </Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
